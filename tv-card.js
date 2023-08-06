@@ -140,10 +140,10 @@ class TVCardServices extends LitElement {
         this.volume_slider.style = "flex: 0.9;";
         this.volume_slider.ontouchstart = (e) => {
             e.stopImmediatePropagation();
-            if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "medium");
+            if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "heavy");
         };
         this.volume_slider.addEventListener("input", (e) => {
-            if (this._config.enable_slider_feedback === undefined || this._config.enable_slider_feedback) fireEvent(window, "haptic", "medium");
+            if (this._config.enable_slider_feedback === undefined || this._config.enable_slider_feedback) fireEvent(window, "haptic", "heavy");
         }, true);
 
         this.volume_slider.hass = this._hass;
@@ -172,7 +172,7 @@ class TVCardServices extends LitElement {
         event.stopImmediatePropagation();
         let click_action = () => {
             this.sendKey("ENTER");
-            if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "medium");
+            if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "heavy");
         };
         if (this._config.enable_double_click) {
             this.timer = setTimeout(click_action, 200);
@@ -190,7 +190,7 @@ class TVCardServices extends LitElement {
         this.timer = null;
 
         this.sendKey(this._config.double_click_keycode ? this._config.double_click_keycode : "BACK");
-        if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "medium");
+        if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "heavy");
     }
 
     onTouchStart(event) {
@@ -201,7 +201,7 @@ class TVCardServices extends LitElement {
             //hold
             this.holdinterval = setInterval(() => {
                 this.sendKey(this.holdaction);
-                if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "medium");
+                if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "heavy");
             }, 200);
         }, 700);
         window.initialX = event.touches[0].clientX;
@@ -242,7 +242,7 @@ class TVCardServices extends LitElement {
             this.sendKey(key);
         }
 
-        if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "medium");
+        if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "heavy");
         initialX = null;
         initialY = null;
     }
@@ -262,7 +262,7 @@ class TVCardServices extends LitElement {
             this._hass.callService(domain, service, info.service_data);
         }
 
-        if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "medium");
+        if (this._config.enable_button_feedback === undefined || this._config.enable_button_feedback) fireEvent(window, "haptic", "heavy");
     }
 
     buildIconButton(action) {
