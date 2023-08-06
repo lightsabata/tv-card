@@ -28,6 +28,7 @@ const keys = {
 const sources = {
     "hdmi": {"source": "TrueNAS SCALE", "icon": "mdi:hdmi-port"},
     "netflix": {"source": "Netflix", "icon": "mdi:netflix"},
+    "jellyfin": {"source": "jellyfin", "icon": "mdi:play"},
     "youtube": {"source": "YouTube", "icon": "mdi:youtube"},
     "livetv": {"source": "Live TV", "icon": "mdi:television-classic"},
 };
