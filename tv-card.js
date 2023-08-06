@@ -29,7 +29,7 @@ const sources = {
     "hdmi": {"source": "TrueNAS SCALE", "icon": "mdi:hdmi-port"},
     "netflix": {"source": "Netflix", "icon": "mdi:netflix"},
     "youtube": {"source": "YouTube", "icon": "mdi:youtube"},
-    "netflix": {"source": "Netflix", "icon": "mdi:television-classic"},
+    "livetv": {"source": "Live TV", "icon": "mdi:television-classic"},
 };
 
 var fireEvent = function(node, type, detail, options) {
