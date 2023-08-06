@@ -1,5 +1,5 @@
-name: TV Card
-description: 📺 TV Remote Card
+name: TV Card (webos edition)
+description: 📺 TV Remote Card (webos)
 type: lovelace
 keywords:
   - tvcard
