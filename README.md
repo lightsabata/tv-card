@@ -9,11 +9,11 @@
 
 [![Github][github]][github]
 
-📦 This repo is a fork of [tv-card](https://github.com/marrobHD/tv-card) and includes a bunch of new features and improvements, like:
+📦 This repo is a fork of [usernein/tv-card](https://github.com/usernein/tv-card)) edited to work with LG WebOS TV's
 
 - Fully functional touchpad for navigation (thanks to [iablon's Touchpad Card](https://github.com/iablon/HomeAssistant-Touchpad-Card)) ❤️
 - Slider for volume (thanks to [AnthonMS's Slider Card](https://github.com/AnthonMS/my-cards#slider-card)) ❤️
-- Supports [ollo69's SamsungTV Smart Component](https://github.com/ollo69/ha-samsungtv-smart)
+- Supports [Webos TV official integration](https://github.com/ollo69/ha-samsungtv-smart](https://www.home-assistant.io/integrations/webostv))
 - Much easier setup
 - Implements haptics feedback
 - Customizable layout, you can choose the order of the rows and buttons
