@@ -30,6 +30,7 @@ const sources = {
     "netflix": {"source": "Netflix", "icon": "mdi:netflix"},
     "jellyfin": {"source": "jellyfin", "icon": "mdi:play"},
     "youtube": {"source": "YouTube", "icon": "mdi:youtube"},
+    "prime": {"source": "Prime Video", "icon": "phu:amazon-logo"},
     "livetv": {"source": "Live TV", "icon": "mdi:television-classic"},
 };
 
