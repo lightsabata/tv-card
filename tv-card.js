@@ -287,11 +287,11 @@ class TVCardServices extends LitElement {
     
     buildRow(content) {
         return html `
-            <rowarea
-                <div class="row">
+            <div class="row">
+                <rowarea
                     ${content}
-                </div>
-            </rowarea>
+                </rowarea>
+            </div>
         `;
     }
     buildButtonsFromActions(actions) {
