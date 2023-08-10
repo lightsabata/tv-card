@@ -287,9 +287,11 @@ class TVCardServices extends LitElement {
     
     buildRow(content) {
         return html `
-            <div class="row">
-                ${content}
-            </div>
+            <rowarea
+                <div class="row">
+                    ${content}
+                </div>
+            </rowarea>
         `;
     }
     buildButtonsFromActions(actions) {
@@ -388,6 +390,14 @@ class TVCardServices extends LitElement {
                     border-radius: 30px;
                     flex-grow: 1;
                     height: 200px;
+                    background: #2c2c2c;
+                    touch-action: none;
+                    text-align: center;
+                }
+                rowarea {
+                    border-radius: 30px;
+                    flex-grow: 1;
+                    height: 64px;
                     background: #2c2c2c;
                     touch-action: none;
                     text-align: center;
