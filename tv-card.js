@@ -288,9 +288,7 @@ class TVCardServices extends LitElement {
     buildRow(content) {
         return html `
             <div class="row">
-                <rowarea
-                    ${content}
-                </rowarea>
+                ${content}
             </div>
         `;
     }
